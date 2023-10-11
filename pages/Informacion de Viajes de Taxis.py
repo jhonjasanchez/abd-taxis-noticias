@@ -16,6 +16,7 @@ def cargar_datos_annios():
 # pintar el mapa de calor de un año
 def pintar_mapa_calor(annio):
     df=pd.read_csv('salida_2011_1.csv',sep=",",encoding='latin-1', decimal='.')
+    df = df.groupby(['Borough_SALIDA', 'Borough_LLEGADA'])['TOTAL_VIAJES'].sum().reset_index()
     heatmap_data = df.pivot(index='Borough_SALIDA', columns='Borough_LLEGADA', values='TOTAL_VIAJES')
     # Create a heatmap
     plt.figure(figsize=(8, 6))  # Adjust the figure size as needed
