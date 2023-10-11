@@ -22,4 +22,4 @@ st.title("¡Información de viajes de taxis!")
 input_usuario = st.text_input("Seleccionar un año:")
 
 # Filtrar las opciones basadas en la entrada del usuario
-#opciones_filtradas = [opcion for opcion in annios if input_usuario.lower() in opcion.lower()]
+opciones_filtradas = [opcion for opcion in annios]
