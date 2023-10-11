@@ -4,7 +4,7 @@ import pandas as pd
 
 # Carga tus datos desde una fuente (por ejemplo, un archivo CSV)
 def cargar_datos_annios():
-  datos=pd.read_csv('salida_2011_1.csv',sep=";",encoding='latin-1', decimal=',')
+  datos=pd.read_csv('salida_2011_1.csv',sep=",",encoding='latin-1', decimal='.')
   columna = datos['ANIO_VIAJE']
   lista_annios = columna.tolist()
   lista_annios.sort()
