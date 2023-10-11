@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 # Carga tus datos desde una fuente (por ejemplo, un archivo CSV)
