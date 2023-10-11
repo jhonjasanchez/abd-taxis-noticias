@@ -20,10 +20,10 @@ def pintar_mapa_calor(annio):
     st.write("Columnas", df.columns)
     heatmap_data = df.pivot(index='Borough_SALIDA', columns='Borough_LLEGADA', values='TOTAL_VIAJES')
     # Create a heatmap
-    #plt.figure(figsize=(8, 6))  # Adjust the figure size as needed
+    plt.figure(figsize=(8, 6))  # Adjust the figure size as needed
 
     # Use Seaborn's heatmap function
-    #sns.heatmap(heatmap_data, annot=True, cmap="YlGnBu", fmt="d", linewidths=0.5)
+    sns.heatmap(heatmap_data, annot=True, cmap="YlGnBu", fmt="d", linewidths=0.5)
 
     #plt.title("City-to-City Distance Heatmap")
     #plt.show()
