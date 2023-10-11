@@ -41,4 +41,4 @@ opciones_filtradas = [opcion for opcion in annios]
 # Mostrar las opciones filtradas en el selectbox
 opcion_seleccionada = st.selectbox("Selecciona un año", opciones_filtradas)
 
-pintar_mapa_calor()
+pintar_mapa_calor(2011)
