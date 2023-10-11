@@ -23,3 +23,6 @@ input_usuario = st.text_input("Seleccionar un año:")
 
 # Filtrar las opciones basadas en la entrada del usuario
 opciones_filtradas = [opcion for opcion in annios]
+
+# Mostrar las opciones filtradas en el selectbox
+opcion_seleccionada = st.selectbox("Selecciona un año", opciones_filtradas)
